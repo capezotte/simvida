@@ -490,7 +490,7 @@ void MundoQT::offsetyChanged(int vy)
 
 /******************************************************************************/
 
-void MundoQT::setMutex(QMutex *m)
+void MundoQT::setMutex(QRecursiveMutex *m)
 {
 	mutex = m;
 }
@@ -498,7 +498,7 @@ void MundoQT::setMutex(QMutex *m)
 
 /******************************************************************************/
 
-QMutex* MundoQT::getMutex()
+QRecursiveMutex* MundoQT::getMutex()
 {
 	return mutex;
 }

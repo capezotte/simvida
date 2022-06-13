@@ -14,7 +14,7 @@ class MainWindow : public QMainWindow, private Ui::MainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QMainWindow *parent = 0, Qt::WindowFlags f = 0);
+    MainWindow(QMainWindow *parent = 0, Qt::WindowFlags f = QFlag(0));
 
 
 	inline void abrirMundo(FILE *arq) { widget->abrirMundo(arq); }

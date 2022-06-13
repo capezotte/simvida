@@ -142,7 +142,7 @@ MainWindow::MainWindow(QMainWindow *parent, Qt::WindowFlags f) : QMainWindow(par
 	verticalScrollBar->setSliderPosition(widget->propriedades.tamanho_y/2);
 
 	/* Seta mutex */
-	widget->setMutex(new QMutex(QMutex::Recursive));
+	widget->setMutex(new QRecursiveMutex());
 
 	/* Seta timers para atualizar, pintar e atualizar estatistica */
 	timerA = new QTimer(this);

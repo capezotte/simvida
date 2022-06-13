@@ -9,7 +9,7 @@ class Grafico : public QWidget
     Q_OBJECT
 
 public:
-    Grafico(QWidget *parent = 0, Qt::WindowFlags f = 0);
+    Grafico(QWidget *parent = 0, Qt::WindowFlags f = QFlag(0));
 
 	QImage *imagem;
 	void initImagem();

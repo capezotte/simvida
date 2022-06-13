@@ -9,7 +9,7 @@ class Info : public QWidget, private Ui::Info
     Q_OBJECT
  
 public:
-    Info(QWidget *parent = 0, Qt::WindowFlags f = 0);
+    Info(QWidget *parent = 0, Qt::WindowFlags f = QFlag(0));
 
 	void setBiota(Biota b);
 

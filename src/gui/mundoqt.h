@@ -27,12 +27,12 @@ class MundoQT : public QWidget, public Mundo
 public:
 
 	/* Constructor */
-     MundoQT(QWidget *parent = 0, Qt::WindowFlags f = 0);
+     MundoQT(QWidget *parent = 0, Qt::WindowFlags f = QFlag(0));
      ~MundoQT();
 
 	/* Controle de execucao */
-	QMutex* getMutex();
-	void setMutex(QMutex *m);
+	QRecursiveMutex* getMutex();
+	void setMutex(QRecursiveMutex *m);
 	bool executando;
 
 	/* Seta menus popup */
@@ -134,7 +134,7 @@ private:
 	bool autoSelec;
 
 	/* Controle de execucao */
-	QMutex *mutex;
+	QRecursiveMutex *mutex;
 
 	/* telas */
 	Info *info;
