@@ -10,7 +10,7 @@ class Opcoes : public QWidget, private Ui::Opcoes
     Q_OBJECT
  
 public:
-    Opcoes(QWidget *parent = 0, Qt::WFlags f = 0);
+    Opcoes(QWidget *parent = 0, Qt::WindowFlags f = 0);
 
 	void setMundo(Mundo *m);
 	void setBarras(QScrollBar *x, QScrollBar *y);

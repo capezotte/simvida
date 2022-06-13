@@ -8,7 +8,7 @@ class Ajuda : public QWidget, private Ui::Ajuda
     Q_OBJECT
  
 public:
-    Ajuda(QWidget *parent = 0, Qt::WFlags f = 0);
+    Ajuda(QWidget *parent = 0, Qt::WindowFlags f = 0);
 
 };
 

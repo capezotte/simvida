@@ -8,7 +8,7 @@ class Stat : public QWidget, public Ui::Stat
     Q_OBJECT
 
 public:
-    Stat(QWidget *parent = 0, Qt::WFlags f = 0);
+    Stat(QWidget *parent = 0, Qt::WindowFlags f = 0);
 };
 
 #endif

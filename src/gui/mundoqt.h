@@ -27,7 +27,7 @@ class MundoQT : public QWidget, public Mundo
 public:
 
 	/* Constructor */
-     MundoQT(QWidget *parent = 0, Qt::WFlags f = 0);
+     MundoQT(QWidget *parent = 0, Qt::WindowFlags f = 0);
      ~MundoQT();
 
 	/* Controle de execucao */

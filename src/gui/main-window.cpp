@@ -3,7 +3,7 @@
 
 MainWindow * MainWindow::instance = NULL;
 
-MainWindow::MainWindow(QMainWindow *parent, Qt::WFlags f) : QMainWindow(parent, f)
+MainWindow::MainWindow(QMainWindow *parent, Qt::WindowFlags f) : QMainWindow(parent, f)
 {
     setupUi(this); // this sets up GUI
 	setWindowFlags(f & (~Qt::WindowMaximizeButtonHint));

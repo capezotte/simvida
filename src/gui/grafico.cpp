@@ -5,7 +5,7 @@
 
 /******************************************************************************/
 
-Grafico::Grafico(QWidget *parent, Qt::WFlags f) : QWidget(parent, f)
+Grafico::Grafico(QWidget *parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
 	imagem = NULL;
 }

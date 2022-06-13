@@ -3,7 +3,7 @@
 
 /******************************************************************************/
 
-Info::Info(QWidget *parent, Qt::WFlags f) : QWidget(parent, f)
+Info::Info(QWidget *parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
     setupUi(this); // this sets up GUI
 	setWindowFlags(f & (~Qt::WindowMaximizeButtonHint));

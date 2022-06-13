@@ -18,7 +18,7 @@
 
 /******************************************************************************/
 /* Constructor */
-MundoQT::MundoQT(QWidget *parent, Qt::WFlags f) : QWidget(parent, f), Mundo()
+MundoQT::MundoQT(QWidget *parent, Qt::WindowFlags f) : QWidget(parent, f), Mundo()
 {
 	parede_selecionada = NULL;
 	mutex = NULL;
