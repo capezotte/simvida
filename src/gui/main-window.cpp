@@ -1,4 +1,6 @@
 #include <QtGui>
+#include <qtoolbar.h>
+#include <qstatusbar.h>
 #include "main-window.h"
 
 MainWindow * MainWindow::instance = NULL;
