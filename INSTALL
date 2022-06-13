@@ -1,13 +1,11 @@
 
 Requirements:
 
-* qt4-lib
-* qt4-dev
-* qt4-dev-tools (qmake)
+* qt5-core, qt5-widgets, qt5-xml and qt5-qmake
 
 To install just follow:
 
-$ ./configure
+$ qmake
 $ make
 
 Obs:
