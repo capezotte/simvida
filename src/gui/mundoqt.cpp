@@ -440,14 +440,14 @@ void MundoQT::mousePressEvent ( QMouseEvent * event )
 
 void MundoQT::wheelEvent ( QWheelEvent * event )
 {
-	if (event->delta() > 0 && zm > 0.1f)
+	if (event->pixelDelta().y() > 0 && zm > 0.1f)
 	{
 		zm = (zm * 0.9f) - 0.001f;
 
 		if (!executando)
 			repaint();
 	}
-	else if (event->delta() < 0 && zm < 4.0f)
+	else if (event->pixelDelta().y() < 0 && zm < 4.0f)
 	{
 		zm = (zm * 1.1f) + 0.001f;
 
