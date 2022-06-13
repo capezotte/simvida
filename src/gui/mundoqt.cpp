@@ -980,7 +980,7 @@ void MundoQT::salvarBiota()
 	if (!fileName.isNull())
 	{
 		FILE *arq;
-		arq = fopen(fileName.toAscii().data(), "w");
+		arq = fopen(fileName.toUtf8().data(), "w");
 
 		selecionado->biota.salvar(arq);
 		fclose(arq);
@@ -1000,7 +1000,7 @@ void MundoQT::abrirBiota()
 		return;
 
 	FILE *arq;
-	arq = fopen(fileName.toAscii().data(), "r");
+	arq = fopen(fileName.toUtf8().data(), "r");
 
 	mutex->lock();
 	Biota biota = Biota((Mundo*)this, ((lastPos-Vetor<float>(width()/2,height()/2))/zm) + Vetor<float>(offsetx, offsety), arq);
@@ -1260,7 +1260,7 @@ void MundoQT::abrirSimulacao()
 		return;
 
 	FILE *arq;
-	arq = fopen(fileName.toAscii().data(), "r");
+	arq = fopen(fileName.toUtf8().data(), "r");
 
 	mutex->lock();
 	Mundo::abrirMundo(arq);
@@ -1283,7 +1283,7 @@ void MundoQT::salvarSimulacao()
 		return;
 
 	FILE *arq;
-	arq = fopen(fileName.toAscii().data(), "w");
+	arq = fopen(fileName.toUtf8().data(), "w");
 
 	Mundo::salvarMundo(arq);
 	fclose(arq);
